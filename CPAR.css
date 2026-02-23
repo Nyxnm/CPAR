@@ -1,0 +1,110 @@
+body {
+    background-color: rgb(107, 199, 241);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 40px 0;
+}
+
+/* GROUP CONTAINER STYLE */
+.group1,
+.group2,
+.group3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+
+    padding: 25px;
+    margin-bottom: 40px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Different colors per group */
+.group1 {
+    background-color: #ffffff;
+}
+
+.group2 {
+    background-color: #ffe6e6;
+}
+
+.group3 {
+    background-color: #e6f2ff;
+}
+
+/* Button design */
+button {
+    background-color: rgb(218, 136, 136);
+    width: 150px;
+    height: 120px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: yellow;
+    transform: scale(0.95);
+}
+
+.main-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Section Title */
+.section-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Group Styling */
+.group1,
+.group2,
+.group3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+
+    padding: 25px;
+    margin-bottom: 40px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Different colors */
+.group1 {
+    background-color: #ffffff;
+}
+
+.group2 {
+    background-color: #ffe6e6;
+}
+
+.group3 {
+    background-color: #e6f2ff;
+}
+
+button.playing {
+    background-color: yellow; /* color when audio is playing */
+}
