@@ -1,6 +1,6 @@
 const audioMap = {
 
-    one : "JOYFULBG.mp3",
+    one : "JOYFUL.mp3",
     two: "HISTORICAL.mp3",
     three : "KURATSA.mp3"
 }
@@ -61,4 +61,5 @@ stopBtn.addEventListener("click", () => {
             playingAudios[key] = null;
         }
     }
+
 });
