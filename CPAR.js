@@ -52,15 +52,18 @@ for (let id in audioMap) {
 }
 
 // Mobile STOP button to fade out all sounds
+
+// STOP button fades all audios
 const stopBtn = document.getElementById("stop");
 stopBtn.addEventListener("click", () => {
     for (let key in playingAudios) {
-        if (playingAudios[key]) {
+        const audio = playingAudios[key];
+        if (audio) {
             const btn = document.getElementById(key);
-            fadeOutAudio(playingAudios[key], btn);
-            playingAudios[key] = null;
+            fadeOutAudio(audio, btn, 800, () => {
+                playingAudios[key] = null;
+            });
         }
     }
-
 });
 
